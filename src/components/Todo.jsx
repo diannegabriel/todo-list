@@ -9,14 +9,15 @@ const Todo = ({ text, todo, todos, setTodos }) => {
           completed: !item.completed
         }
       }
-    }))
+      return item;
+    }));
   }
   const handleDelete = () => {
     setTodos(todos.filter(elem => elem.id !== todo.id))
   };
   return (
     <div className="todo">
-      <li className="todo-item">
+      <li className={`todo-item ${todo.completed ? "completed" : ''}`}>
         {text}
       </li>
       <button className="complete-btn" onClick={handleComplete}>
