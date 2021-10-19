@@ -35,8 +35,9 @@ function App() {
         todos={todos}
         setTodos={setTodos}
         setStatus={setStatus}
+        filteredTodos={filteredTodos}
       />
-      <TodoList todos={todos} setTodos={setTodos}/>
+      <TodoList todos={todos} setTodos={setTodos} filteredTodos={filteredTodos}/>
     </div>
   );
 }
