@@ -1,12 +1,15 @@
 import React from "react";
 
-const Form = ({ setInputText }) => {
+const Form = ({ todos, setTodos, setInputText }) => {
   const handleInputText = (e) => {
     console.log(e.target.value);
     setInputText(e.target.value);
   };
   const handleTodoSubmit = (e) => {
     e.preventDefault();
+    setTodos([
+      ...todos
+    ]);
   };
   return (
     <form>
