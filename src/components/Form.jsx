@@ -4,11 +4,14 @@ const Form = ({ setInputText }) => {
   const handleInputText = (e) => {
     console.log(e.target.value);
     setInputText(e.target.value);
-  }
+  };
+  const handleTodoSubmit = (e) => {
+    e.preventDefault();
+  };
   return (
     <form>
       <input onChange={handleInputText} type="text" className="todo-input" />
-      <button className="todo-button" type="submit">
+      <button onClick={handleTodoSubmit} className="todo-button" type="submit">
         <i className="fas fa-plus-square"></i>
       </button>
       <div className="select">
