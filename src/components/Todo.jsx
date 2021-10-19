@@ -4,7 +4,10 @@ const Todo = ({ text, todo, todos, setTodos }) => {
   const handleComplete = () => {
     setTodos(todos.map((item) => {
       if (item.id === todo.id) {
-        console.log("TRUE")
+        return {
+          ...item,
+          completed: !item.completed
+        }
       }
     }))
   }
