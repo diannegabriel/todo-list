@@ -10,15 +10,16 @@ const Form = ({ inputText, setInputText, todos, setTodos }) => {
     setTodos([
       ...todos,
       { 
-        id: Math.random()*1000,
+        id: Math.floor(Math.random()*1000),
         text: inputText,
         completed: false
       }
     ]);
+    setInputText('');
   };
   return (
     <form>
-      <input onChange={handleInputText} type="text" className="todo-input" />
+      <input onChange={handleInputText} value={inputText} type="text" className="todo-input" />
       <button onClick={handleTodoSubmit} className="todo-button" type="submit">
         <i className="fas fa-plus-square"></i>
       </button>
