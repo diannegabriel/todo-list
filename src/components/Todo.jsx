@@ -1,6 +1,9 @@
 import React from "react";
 
 const Todo = ({ text }) => {
+  const handleDelete = (e) => {
+
+  };
   return (
     <div className="todo">
       <li className="todo-item">
