@@ -9,21 +9,21 @@ function App() {
   const [status, setStatus] = useState('all');
   const [filteredTodos, setFilteredTodos] = useState([]);
   useEffect(() => {
+    const handleFilter = () => {
+      switch(status){
+        case 'completed':
+          setFilteredTodos(todos.filter(todo => todo.completed === true));
+          break;
+        case 'incomplete':
+          setFilteredTodos(todos.filter(todo => todo.completed === false));
+          break;
+        default:
+          setFilteredTodos(todos);
+          break;
+      }
+    }
     handleFilter();
   }, [todos, status])
-  const handleFilter = () => {
-    switch(status){
-      case 'completed':
-        setFilteredTodos(todos.filter(todo => todo.completed === true));
-        break;
-      case 'incomplete':
-        setFilteredTodos(todos.filter(todo => todo.completed === false));
-        break;
-      default:
-        setFilteredTodos(todos);
-        break;
-    }
-  }
   return (
     <div className="App">
       <header>
@@ -35,9 +35,12 @@ function App() {
         todos={todos}
         setTodos={setTodos}
         setStatus={setStatus}
+      />
+      <TodoList 
+        todos={todos} 
+        setTodos={setTodos} 
         filteredTodos={filteredTodos}
       />
-      <TodoList todos={todos} setTodos={setTodos} filteredTodos={filteredTodos}/>
     </div>
   );
 }
