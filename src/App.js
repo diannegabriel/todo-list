@@ -8,6 +8,19 @@ function App() {
   const [todos, setTodos] = useState([]);
   const [status, setStatus] = useState('all');
   const [filteredTodos, setFilteredTodos] = useState([]);
+  const handleFilter = () => {
+    switch(status){
+      case 'completed':
+        setFilteredTodos(todos.filter(todo => todo.completed === true));
+        break;
+      case 'incomplete':
+        setFilteredTodos(todos.filter(todo => todo.completed === false));
+        break;
+      default:
+        setFilteredTodos(todos);
+        break;
+    }
+  }
   return (
     <div className="App">
       <header>
