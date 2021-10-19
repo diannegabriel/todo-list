@@ -3,7 +3,9 @@ import React from "react";
 const Todo = ({ text, todo, todos, setTodos }) => {
   const handleComplete = () => {
     setTodos(todos.map((item) => {
-
+      if (item.id === todo.id) {
+        console.log("TRUE")
+      }
     }))
   }
   const handleDelete = () => {
@@ -14,7 +16,7 @@ const Todo = ({ text, todo, todos, setTodos }) => {
       <li className="todo-item">
         {text}
       </li>
-      <button className="complete-btn">
+      <button className="complete-btn" onClick={handleComplete}>
         <i className="fas fa-check"></i>
       </button>
       <button className="trash-btn" onClick={handleDelete}>
