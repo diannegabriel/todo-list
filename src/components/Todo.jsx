@@ -1,9 +1,9 @@
 import React from "react";
 
-const Todo = ({ text, todos, setTodos }) => {
+const Todo = ({ text, todo, todos, setTodos }) => {
   const handleDelete = (e) => {
     e.preventDefault();
-    setTodos(todos.filter(elem => elem.id !== todos.id))
+    setTodos(todos.filter(elem => elem.id !== todo.id))
   };
   return (
     <div className="todo">
