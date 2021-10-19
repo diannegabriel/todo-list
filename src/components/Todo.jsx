@@ -1,8 +1,12 @@
 import React from "react";
 
 const Todo = ({ text, todo, todos, setTodos }) => {
-  const handleDelete = (e) => {
-    e.preventDefault();
+  const handleComplete = () => {
+    setTodos(todos.map((item) => {
+
+    }))
+  }
+  const handleDelete = () => {
     setTodos(todos.filter(elem => elem.id !== todo.id))
   };
   return (
