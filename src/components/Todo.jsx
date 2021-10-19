@@ -6,8 +6,8 @@ const Todo = () => {
       <li className="todo-item">
         HELLO
       </li>
-      <button className="fas fa-check"></button>
-      <button className="fas fa-trash"></button>
+      <button className="complete-btn"><i className="fas fa-check"></i></button>
+      <button className="trash-btn"><i className="fas fa-trash"></i></button>
     </div>
   )
 };
