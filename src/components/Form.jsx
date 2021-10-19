@@ -18,7 +18,6 @@ const Form = ({ inputText, setInputText, todos, setTodos, setStatus }) => {
     setInputText('');
   };
   const handleStatusChange = (e) => {
-    // e.preventDefault();
     console.log(e.target.value)
     setStatus(e.target.value)
   }
