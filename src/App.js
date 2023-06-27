@@ -14,8 +14,11 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       const result = await fetch(motivateURL)
+      console.log(result)
+
     }
-  })
+    fetchData();
+  }, []);
   useEffect(() => {
     const handleFilter = () => {
       switch(status){
