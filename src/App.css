@@ -71,6 +71,12 @@ form button:hover {
   flex: 1;
 }
 
+.quote-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .trash-btn,
 .complete-btn {
   background: #ff6f47;
