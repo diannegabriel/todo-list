@@ -12,6 +12,7 @@ function App() {
   const [status, setStatus] = useState('all');
   const [filteredTodos, setFilteredTodos] = useState([]);
   const [quote, setQuote] = useState('')
+  
   useEffect(() => {
     const fetchData = async () => {
       const result = await fetch(motivateURL)
@@ -19,8 +20,10 @@ function App() {
         // console.log(json[0].text)
         // console.log(json[0].author)
         const randomQuote = Math.floor(Math.random() * json.length)
-        setQuote(json[randomQuote].text + " " + "-" + json[randomQuote.author])
-        // console.log(json[randomQuote].author)
+        if (!json[randomQuote].author){
+          setQuote(json[randomQuote].text)
+        }
+        setQuote(json[randomQuote].text + " — " + json[randomQuote].author)
       })
     }
     fetchData();
@@ -46,6 +49,7 @@ function App() {
       <header>
         <h1><a href="/">MotivaDo</a></h1>
       </header>
+      Quote: {quote}
       <Form 
         inputText={inputText} 
         setInputText={setInputText}
