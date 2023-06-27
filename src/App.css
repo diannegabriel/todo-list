@@ -138,8 +138,7 @@ select {
   pointer-events: none;
 }
 /* Transition */
-/*
-.select:hover::after {
+
+/* .select:hover::after {
   transform: scale(1.5);
-}
-*/
+} */
