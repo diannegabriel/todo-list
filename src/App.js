@@ -3,6 +3,7 @@ import { useState, useEffect } from "react"
 import './App.css';
 import Form from './components/Form'
 import TodoList from './components/TodoList';
+import Quote from './components/Quote'
 
 const motivateURL = `https://type.fit/api/quotes`;
 
@@ -12,7 +13,7 @@ function App() {
   const [status, setStatus] = useState('all');
   const [filteredTodos, setFilteredTodos] = useState([]);
   const [quote, setQuote] = useState('')
-  
+
   useEffect(() => {
     const fetchData = async () => {
       const result = await fetch(motivateURL)
