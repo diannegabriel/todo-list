@@ -11,6 +11,7 @@ function App() {
   const [todos, setTodos] = useState([]);
   const [status, setStatus] = useState('all');
   const [filteredTodos, setFilteredTodos] = useState([]);
+  const [quote, setQuote] = useState()
   useEffect(() => {
     const fetchData = async () => {
       const result = await fetch(motivateURL)
