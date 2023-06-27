@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+
 import './App.css';
 import Form from './components/Form'
 import TodoList from './components/TodoList';
@@ -27,7 +28,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1><a href="/">Dianne's Todo List</a></h1>
+        <h1><a href="/">MotivaDo</a></h1>
       </header>
       <Form 
         inputText={inputText} 

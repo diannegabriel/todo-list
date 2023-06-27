@@ -2,7 +2,6 @@ import React from "react";
 
 const Form = ({ inputText, setInputText, todos, setTodos, setStatus }) => {
   const handleInputText = (e) => {
-    console.log(e.target.value);
     setInputText(e.target.value);
   };
   const handleTodoSubmit = (e) => {
@@ -18,7 +17,6 @@ const Form = ({ inputText, setInputText, todos, setTodos, setStatus }) => {
     setInputText('');
   };
   const handleStatusChange = (e) => {
-    console.log(e.target.value)
     setStatus(e.target.value)
   }
   return (
