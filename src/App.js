@@ -14,8 +14,9 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       const result = await fetch(motivateURL)
-      console.log(result)
-
+      result.json().then(json => {
+        console.log(json)
+      })
     }
     fetchData();
   }, []);
