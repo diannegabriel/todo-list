@@ -11,12 +11,17 @@ function App() {
   const [todos, setTodos] = useState([]);
   const [status, setStatus] = useState('all');
   const [filteredTodos, setFilteredTodos] = useState([]);
-  const [quote, setQuote] = useState()
+  const [quote, setQuote] = useState('')
   useEffect(() => {
     const fetchData = async () => {
       const result = await fetch(motivateURL)
       result.json().then(json => {
         console.log(json)
+        // console.log(json[0].text)
+        // console.log(json[0].author)
+        console.log(json.length)
+        const randomQuote = Math.floor(Math.random() * json.length)
+        console.log(randomQuote)
       })
     }
     fetchData();
