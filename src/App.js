@@ -16,12 +16,11 @@ function App() {
     const fetchData = async () => {
       const result = await fetch(motivateURL)
       result.json().then(json => {
-        console.log(json)
         // console.log(json[0].text)
         // console.log(json[0].author)
-        console.log(json.length)
         const randomQuote = Math.floor(Math.random() * json.length)
-        console.log(randomQuote)
+        setQuote(json[randomQuote].text + " " + "-" + json[randomQuote.author])
+        // console.log(json[randomQuote].author)
       })
     }
     fetchData();
