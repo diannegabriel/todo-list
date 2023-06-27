@@ -4,11 +4,14 @@ import './App.css';
 import Form from './components/Form'
 import TodoList from './components/TodoList';
 
+const motivateURL = `https://type.fit/api/quotes`;
+
 function App() {
   const [inputText, setInputText] = useState('');
   const [todos, setTodos] = useState([]);
   const [status, setStatus] = useState('all');
   const [filteredTodos, setFilteredTodos] = useState([]);
+
   useEffect(() => {
     const handleFilter = () => {
       switch(status){
