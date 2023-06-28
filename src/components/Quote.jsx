@@ -4,7 +4,9 @@ const Quote = ({ quote }) => {
 
   return (
     <div className="quote-container">
-      Quote: {quote}
+      <p>
+      {quote}
+      </p>
     </div>
   )
 };

@@ -75,6 +75,8 @@ form button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: bolder;
+  font-style: italic;
 }
 
 .trash-btn,
