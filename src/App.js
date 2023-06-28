@@ -46,6 +46,10 @@ function App() {
     }
     handleFilter();
   }, [todos, status])
+
+  const saveLocalTodos = () => {
+    
+  }
   return (
     <div className="App">
       <header>
