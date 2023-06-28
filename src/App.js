@@ -13,6 +13,7 @@ function App() {
   const [status, setStatus] = useState('all');
   const [filteredTodos, setFilteredTodos] = useState([]);
   const [quote, setQuote] = useState('')
+  const [error, setError] = useState(false)
 
   useEffect(() => {
     const fetchData = async () => {
