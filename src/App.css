@@ -87,9 +87,7 @@ form button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: bolder;
-  font-style: italic;
-  background: rgba(44, 44, 44, 0.3);
+  margin: -50px 0 50px 0;
 }
 .trash-btn,
 .complete-btn {
