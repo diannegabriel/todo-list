@@ -7,7 +7,6 @@ const Form = ({ inputText, setInputText, todos, setTodos, setStatus, setError })
   const handleTodoSubmit = (e) => {
     e.preventDefault();
     if (inputText.length === 0) {
-      console.log("Error!")
       setError(true)
     } else {
       setTodos([
