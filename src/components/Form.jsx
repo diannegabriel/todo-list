@@ -1,6 +1,6 @@
 import React from "react";
 
-const Form = ({ inputText, setInputText, todos, setTodos, setStatus, error, setError }) => {
+const Form = ({ inputText, setInputText, todos, setTodos, setStatus, setError }) => {
   const handleInputText = (e) => {
     setInputText(e.target.value);
   };
@@ -36,11 +36,6 @@ const Form = ({ inputText, setInputText, todos, setTodos, setStatus, error, setE
           <option value="completed">Completed</option>
           <option value="incomplete">Incomplete</option>
         </select>
-      </div>
-      <div className="error-container">
-        {error&&inputText.length === 0?
-          <label>Please add a thing to do</label>:""
-        }
       </div>
     </form>
   );

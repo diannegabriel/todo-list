@@ -83,6 +83,17 @@ form button:hover {
   width: 80vw;
   padding: 25px;
 }
+.error-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  font-style: italic;
+  background: rgba(44, 44, 44, 0.3);
+  /* height: 15vh;
+  width: 80vw;
+  padding: 25px; */
+}
 .trash-btn,
 .complete-btn {
   background: #ff6f47;
