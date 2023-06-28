@@ -17,6 +17,10 @@ function App() {
   const [error, setError] = useState(false)
 
   useEffect(() => {
+    getLocalTodos();
+  }, [])
+
+  useEffect(() => {
     const fetchQuote = async () => {
       const result = await fetch(motivateURL)
       result.json().then(json => {
@@ -49,21 +53,21 @@ function App() {
 
   useEffect(() => {
     const saveLocalTodos = () => {
-      localStorage.setItem('todos', JSON.stringify(todos));
+      localStorage.setItem("todos", JSON.stringify(todos));
     }
     saveLocalTodos();
   }, [todos, status])
-  useEffect(() => {
-    const getLocalTodos = () => {
-      if(localStorage.getItem('todos') === null) {
-        localStorage.setItem('todos', JSON.stringify([]));
-      } else {
-        localStorage.setItem('todos', JSON.stringify(todos));
-      }
+
+  const getLocalTodos = () => {
+    if (localStorage.getItem('todos') === null) {
+      localStorage.setItem('todos', JSON.stringify([]));
+    } else {
+      let localTodo = JSON.parse(localStorage.getItem("todos"));
+      // let localTodo = localStorage.getItem("todos", JSON.stringify(todos))
+      console.log(localTodo)
+      setTodos(localTodo)
     }
-    getLocalTodos();
-  }, [])
- 
+  }
   return (
     <div className="App">
       <header>
