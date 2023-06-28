@@ -70,15 +70,15 @@ form button:hover {
 .todo li {
   flex: 1;
 }
-
 .quote-container {
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: bolder;
   font-style: italic;
+  background: rgba(44, 44, 44, 0.3);
+  height: 10vh;
 }
-
 .trash-btn,
 .complete-btn {
   background: #ff6f47;
