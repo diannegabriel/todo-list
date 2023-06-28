@@ -90,9 +90,6 @@ form button:hover {
   font-weight: bolder;
   font-style: italic;
   background: rgba(44, 44, 44, 0.3);
-  /* height: 15vh;
-  width: 80vw;
-  padding: 25px; */
 }
 .trash-btn,
 .complete-btn {

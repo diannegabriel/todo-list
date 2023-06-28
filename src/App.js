@@ -64,6 +64,11 @@ function App() {
         error={error}
         setError={setError}
       />
+      <Error 
+        error={error}
+        inputText={inputText} 
+
+      />
       <TodoList 
         todos={todos} 
         setTodos={setTodos} 

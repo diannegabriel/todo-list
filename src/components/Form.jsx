@@ -19,6 +19,7 @@ const Form = ({ inputText, setInputText, todos, setTodos, setStatus, setError })
         }
       ]);
       setInputText('');
+      setError(false);
     }
   };
   const handleStatusChange = (e) => {
