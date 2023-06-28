@@ -51,7 +51,8 @@ function App() {
         <h1><a href="/">MotivaDo</a></h1>
       </header>
       <Quote
-        quote={quote}/>
+        quote={quote}
+      />
       <Form 
         inputText={inputText} 
         setInputText={setInputText}
