@@ -57,6 +57,15 @@ function App() {
     }
     saveLocalTodos();
   }, [todos, status])
+  useEffect(() => {
+    const getLocalTodos = () => {
+      if(localStorage.getItem('todos') === null) {
+        localStorage.setItem('todos', JSON.stringify([]));
+      } else {
+        localStorage.setItem('todos', JSON.stringify(todos));
+      }
+    }
+  }, [])
  
   return (
     <div className="App">
