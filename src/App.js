@@ -49,11 +49,7 @@ function App() {
 
   useEffect(() => {
     const saveLocalTodos = () => {
-      if(localStorage.getItem('todos') === null) {
-        localStorage.setItem('todos', JSON.stringify([]));
-      } else {
-        localStorage.setItem('todos', JSON.stringify(todos));
-      }
+      localStorage.setItem('todos', JSON.stringify(todos));
     }
     saveLocalTodos();
   }, [todos, status])
@@ -65,6 +61,7 @@ function App() {
         localStorage.setItem('todos', JSON.stringify(todos));
       }
     }
+    getLocalTodos();
   }, [])
  
   return (
