@@ -37,9 +37,11 @@ const Form = ({ inputText, setInputText, todos, setTodos, setStatus, error, setE
           <option value="incomplete">Incomplete</option>
         </select>
       </div>
-      {error&&inputText.length === 0?
-      <label>Please add a thing to do</label>:""
-      }
+      <div className="error-container">
+        {error&&inputText.length === 0?
+          <label>Please add a thing to do</label>:""
+        }
+      </div>
     </form>
   );
 };
