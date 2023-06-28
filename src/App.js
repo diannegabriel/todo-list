@@ -20,8 +20,6 @@ function App() {
     const fetchData = async () => {
       const result = await fetch(motivateURL)
       result.json().then(json => {
-        // console.log(json[0].text)
-        // console.log(json[0].author)
         const randomQuote = Math.floor(Math.random() * json.length)
         if (!json[randomQuote].author){
           setQuote(json[randomQuote].text)
