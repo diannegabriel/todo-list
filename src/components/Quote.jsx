@@ -2,7 +2,7 @@ import React from "react";
 
 const Quote = ({ quote }) => {
   const handleRefresh = () => {
-    
+    console.log("refresh for a new quote!")
   }
   return (
     <div className="quote-container">
@@ -10,7 +10,7 @@ const Quote = ({ quote }) => {
       {quote}
       </p>
       <button className="refresh-btn" onClick={handleRefresh}>
-        <i class="fa-solid fa-arrows-rotate"></i>
+        <i className="fas fa-redo-alt"></i>
       </button>
     </div>
   )
