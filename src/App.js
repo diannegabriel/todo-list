@@ -17,17 +17,18 @@ function App() {
   const [error, setError] = useState(false)
 
   useEffect(() => {
-    const fetchData = async () => {
+    const fetchQuote = async () => {
       const result = await fetch(motivateURL)
       result.json().then(json => {
         const randomQuote = Math.floor(Math.random() * json.length)
-        if (!json[randomQuote].author){
+        if (json[randomQuote].author === null){
           setQuote(json[randomQuote].text)
+        } else {
+          setQuote(json[randomQuote].text + " — " + json[randomQuote].author)
         }
-        setQuote(json[randomQuote].text + " — " + json[randomQuote].author)
       })
     }
-    fetchData();
+    fetchQuote();
   }, []);
   useEffect(() => {
     const handleFilter = () => {
