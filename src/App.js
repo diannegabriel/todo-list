@@ -60,6 +60,8 @@ function App() {
         todos={todos}
         setTodos={setTodos}
         setStatus={setStatus}
+        error={error}
+        setError={setError}
       />
       <TodoList 
         todos={todos} 

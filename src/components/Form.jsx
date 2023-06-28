@@ -1,20 +1,25 @@
 import React from "react";
 
-const Form = ({ inputText, setInputText, todos, setTodos, setStatus }) => {
+const Form = ({ inputText, setInputText, todos, setTodos, setStatus, error, setError }) => {
   const handleInputText = (e) => {
     setInputText(e.target.value);
   };
   const handleTodoSubmit = (e) => {
     e.preventDefault();
-    setTodos([
-      ...todos,
-      { 
-        id: todos.length,
-        text: inputText,
-        completed: false
-      }
-    ]);
-    setInputText('');
+    if (inputText.length === 0) {
+      console.log("Error!")
+      setError(true)
+    } else {
+      setTodos([
+        ...todos,
+        { 
+          id: todos.length,
+          text: inputText,
+          completed: false
+        }
+      ]);
+      setInputText('');
+    }
   };
   const handleStatusChange = (e) => {
     setStatus(e.target.value)
@@ -32,6 +37,9 @@ const Form = ({ inputText, setInputText, todos, setTodos, setStatus }) => {
           <option value="incomplete">Incomplete</option>
         </select>
       </div>
+      {error&&inputText.length === 0?
+      <label>Please add a thing to do</label>:""
+      }
     </form>
   );
 };
