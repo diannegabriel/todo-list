@@ -47,9 +47,17 @@ function App() {
     handleFilter();
   }, [todos, status])
 
-  const saveLocalTodos = () => {
-    
-  }
+  useEffect(() => {
+    const saveLocalTodos = () => {
+      if(localStorage.getItem('todos') === null) {
+        localStorage.setItem('todos', JSON.stringify([]));
+      } else {
+        localStorage.setItem('todos', JSON.stringify(todos));
+      }
+    }
+    saveLocalTodos();
+  }, [todos, status])
+ 
   return (
     <div className="App">
       <header>
