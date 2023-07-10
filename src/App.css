@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  background: linear-gradient(to right, #24243e, #302b63, #24243e);
   color: white;
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
@@ -56,8 +56,6 @@ form button:hover {
   min-width: 30%;
   list-style: none;
   /* align-self: center; */
-  /* inline-size: 650px; 
-  overflow-wrap: break-word; */
 }
 
 .todo {
