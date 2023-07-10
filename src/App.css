@@ -86,7 +86,7 @@ form button:hover {
   font-style: italic;
   background: rgb(127 102 102 / 30%);
   height: 15vh;
-  width: 60vw;
+  min-width: 30%;
   padding: 25px;
   border-radius: 25px;
 }
