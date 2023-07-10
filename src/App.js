@@ -69,7 +69,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1><a href="/">MotivaDid</a></h1>
+        <h1>MotivaDid</h1>
       </header>
       <Quote
         quote={quote}
