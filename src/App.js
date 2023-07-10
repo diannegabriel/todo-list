@@ -17,6 +17,14 @@ function App() {
   const [error, setError] = useState(false)
 
   useEffect(() => {
+    const getLocalTodos = () => {
+      if (localStorage.getItem('todos') === null) {
+        localStorage.setItem('todos', JSON.stringify([]));
+      } else {
+        let localTodo = JSON.parse(localStorage.getItem("todos"));
+        setTodos(localTodo)
+      }
+    }
     getLocalTodos();
   }, [])
 
@@ -58,14 +66,6 @@ function App() {
     saveLocalTodos();
   }, [todos, status])
 
-  const getLocalTodos = () => {
-    if (localStorage.getItem('todos') === null) {
-      localStorage.setItem('todos', JSON.stringify([]));
-    } else {
-      let localTodo = JSON.parse(localStorage.getItem("todos"));
-      setTodos(localTodo)
-    }
-  }
   return (
     <div className="App">
       <header>
