@@ -85,10 +85,10 @@ form button:hover {
   font-weight: bolder;
   font-style: italic;
   background: rgb(127 102 102 / 30%);
-  height: 15vh;
-  min-width: 30%;
-  padding: 25px;
-  border-radius: 25px;
+  height: 12vh;
+  width: 100vw;
+  padding: 20px 70px 20px 70px;
+  /* border-radius: 25px; */
 }
 .error-container {
   display: flex;
