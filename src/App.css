@@ -56,6 +56,8 @@ form button:hover {
   min-width: 30%;
   list-style: none;
   /* align-self: center; */
+  /* inline-size: 650px; 
+  overflow-wrap: break-word; */
 }
 
 .todo {
@@ -68,6 +70,9 @@ form button:hover {
   /* align-items: center; */
   transition: all 1s ease;
   max-width: 650px;
+  overflow-wrap: break-word;
+  word-break: break-all;
+
 }
 .filter-todo {
   padding: 1rem;
