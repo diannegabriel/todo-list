@@ -74,6 +74,10 @@ function App() {
       <Quote
         quote={quote}
       />
+      <Error 
+        error={error}
+        inputText={inputText} 
+      />
       <Form 
         inputText={inputText} 
         setInputText={setInputText}
@@ -81,10 +85,6 @@ function App() {
         setTodos={setTodos}
         setStatus={setStatus}
         setError={setError}
-      />
-      <Error 
-        error={error}
-        inputText={inputText} 
       />
       <TodoList 
         todos={todos} 
