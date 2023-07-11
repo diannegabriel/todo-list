@@ -10,6 +10,7 @@ body {
   min-height: 100vh;
   display: flex;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 a {
@@ -45,7 +46,7 @@ form button {
   background: white;
   color: #364051;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -96,7 +97,7 @@ form button:hover {
   /* background-color: #ebebeb; */
   background: rgb(235,235,235);
 background: linear-gradient(90deg, rgba(235,235,235,1) 0%, rgba(235,235,235,1) 51%, rgba(235,235,235,0) 100%);
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
 }
 .quote-container {
   display: flex;
@@ -118,7 +119,7 @@ background: linear-gradient(90deg, rgba(235,235,235,1) 0%, rgba(235,235,235,1) 5
 }
 .trash-btn,
 .complete-btn {
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
   color: #b6b6b6;
   border: none;
   padding: 1rem;
@@ -156,7 +157,7 @@ background: linear-gradient(90deg, rgba(235,235,235,1) 0%, rgba(235,235,235,1) 5
 }
 
 .completed {
-  transition: all 0.5s ease;
+  transition: all 0.3s ease-in-out;
   text-decoration: line-through;
   opacity: 0.5;
 }
