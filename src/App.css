@@ -19,13 +19,11 @@ a {
 
 header {
   font-size: 2rem;
-}
-
-header {
   min-height: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-shadow: 3px 3px 5px #000000;
 }
 form {
   display: flex;
