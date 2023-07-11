@@ -76,6 +76,9 @@ form button:hover {
   word-break: break-all;
   border-bottom: 0.5px dashed rgb(188, 188, 188);
 }
+.todo:last-child {
+  border: none;
+}
 .filter-todo {
   padding: 1rem;
 }
