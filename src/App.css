@@ -76,7 +76,6 @@ form button:hover {
   display: flex;
   justify-content: space-between;
   /* align-items: center; */
-  transition: all 1s ease;
   width: 600px;
   overflow-wrap: break-word;
   word-break: break-all;
