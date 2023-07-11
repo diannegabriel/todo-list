@@ -32,18 +32,24 @@ form {
   justify-content: center;
   align-items: center;
 }
-form input,
+form input {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background: white;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
 form button {
   padding: 0.5rem;
   font-size: 2rem;
   border: none;
   background: white;
-}
-form button {
   color: #364051;
-  background: #f7fffe;
   cursor: pointer;
   transition: all 0.3s ease;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 form button:hover {
   background: #455c88;
@@ -76,7 +82,13 @@ form button:hover {
   word-break: break-all;
   border-bottom: 0.5px dashed rgb(188, 188, 188);
 }
+.todo:first-child{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
 .todo:last-child {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   border: none;
 }
 .filter-todo {
@@ -95,7 +107,6 @@ form button:hover {
   height: 12vh;
   width: 100vw;
   padding: 20px 70px 20px 70px;
-  /* border-radius: 25px; */
 }
 .error-container {
   display: flex;
@@ -106,13 +117,13 @@ form button:hover {
 .trash-btn,
 .complete-btn {
   transition: all 0.3s ease;
-  background: #fff;
   color: #b6b6b6;
   border: none;
   padding: 1rem;
   cursor: pointer;
   font-size: 1rem;
   height: 100%;
+  background-color: transparent;
 }
 .complete-btn {
   background: #fff;
@@ -122,14 +133,13 @@ form button:hover {
   color: #fff;
 }
 .trash-btn:hover {
-  background-color: #b6b6b6;
-  color: #fff;
+  /* background-color: #b6b6b6; */
+  color: rgb(91, 91, 91);
 }
 .todo-item {
   padding: 0rem 0.5rem;
   align-self: center;
 }
-
 .fa-trash,
 .fa-check {
   pointer-events: none;
@@ -169,6 +179,7 @@ select {
   font-family: "Poppins", sans-serif;
   cursor: pointer;
   width: 12rem;
+  border-radius: 10px;
 }
 /* Arrow */
 .select::after {
@@ -176,10 +187,12 @@ select {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 1rem;
+  padding: 0.85rem;
   background: #455c88;
   cursor: pointer;
   pointer-events: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 /* Transition */
 
