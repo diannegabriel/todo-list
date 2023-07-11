@@ -122,8 +122,8 @@ form button:hover {
   color: #fff;
 }
 .trash-btn:hover {
-  background-color: #455c88;
-  /* color: #455c88; */
+  background-color: #b6b6b6;
+  color: #fff;
 }
 .todo-item {
   padding: 0rem 0.5rem;
