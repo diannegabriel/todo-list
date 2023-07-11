@@ -96,6 +96,12 @@ form button:hover {
 .todo li {
   flex: 1;
 }
+.todo:hover {
+  /* background-color: #ebebeb; */
+  background: rgb(235,235,235);
+background: linear-gradient(90deg, rgba(235,235,235,1) 0%, rgba(235,235,235,1) 51%, rgba(235,235,235,0) 100%);
+  transition: all 0.3s ease;
+}
 .quote-container {
   display: flex;
   justify-content: center;
@@ -138,6 +144,9 @@ form button:hover {
 .todo-item {
   padding: 0rem 0.5rem;
   align-self: center;
+}
+.todo-item:hover {
+  cursor: pointer;
 }
 .fa-trash,
 .fa-check {

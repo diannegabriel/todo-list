@@ -17,13 +17,13 @@ const Todo = ({ text, todo, todos, setTodos }) => {
   };
   return (
     <div className="todo">
-      <li className={`todo-item ${todo.completed ? "completed" : ''}`}>
+      <li className={`todo-item ${todo.completed ? "completed" : ''}`} onClick={handleComplete}>
         {text}
       </li>
       <div className="todo-buttons">
-        <button className="complete-btn" onClick={handleComplete}>
+        {/* <button className="complete-btn">
           <i className="fas fa-check"></i>
-        </button>
+        </button> */}
         <button className="trash-btn" onClick={handleDelete}>
           <i className="fas fa-trash"></i>
         </button>
