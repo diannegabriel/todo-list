@@ -139,7 +139,7 @@ background: linear-gradient(90deg, rgba(235,235,235,1) 0%, rgba(235,235,235,1) 5
 }
 .trash-btn:hover {
   /* background-color: #b6b6b6; */
-  color: rgb(91, 91, 91);
+  color: rgb(255, 255, 255);
 }
 .todo-item {
   padding: 0rem 0.5rem;
