@@ -16,6 +16,7 @@ function App() {
   const [quote, setQuote] = useState('')
   const [error, setError] = useState(false)
 
+  // Functions as the "grabber" of the todos from local storage
   useEffect(() => {
     const getLocalTodos = () => {
       if (localStorage.getItem('todos') === null) {
@@ -28,6 +29,7 @@ function App() {
     getLocalTodos();
   }, [])
 
+  // Functions as the quote generator
   useEffect(() => {
     const fetchQuote = async () => {
       const result = await fetch(motivateURL)
@@ -42,6 +44,7 @@ function App() {
     }
     fetchQuote();
   }, []);
+
   useEffect(() => {
     const handleFilter = () => {
       switch(status){
