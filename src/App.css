@@ -21,9 +21,13 @@ header {
   font-size: 2rem;
 }
 
-header,
-form {
+header {
   min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,7 +71,7 @@ form button:hover {
   justify-content: space-between;
   /* align-items: center; */
   transition: all 1s ease;
-  max-width: 650px;
+  width: 600px;
   overflow-wrap: break-word;
   word-break: break-all;
 
@@ -94,7 +98,7 @@ form button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: -50px 0 50px 0;
+  margin: 50px 0 0 0;
 }
 .trash-btn,
 .complete-btn {
