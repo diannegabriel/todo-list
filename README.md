@@ -8,7 +8,7 @@ Simple todo list app with added motivational quotes to inspire you!
 
 !["Sorted completed tasks"](https://github.com/diannegabriel/todo-list/blob/master/docs/completed.png)
 
-!["Sorted incomplete tasks"](https://github.com/diannegabriel/todo-list/blob/master/docs/incomplete.png)
+!["Sorted incomplete tasks"](https://github.com/diannegabriel/todo-list/blob/master/docs/incomplete1.png)
 
 ## Tech used
 
