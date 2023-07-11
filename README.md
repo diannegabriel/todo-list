@@ -4,11 +4,11 @@ Simple todo list app with added motivational quotes to inspire you!
 
 ## Final Product
 
-!["Home"](https://github.com/diannegabriel/tinyapp/blob/master/docs/urls_new.png)
+!["Home"](https://github.com/diannegabriel/todo-list/blob/master/docs/all.png)
 
-!["Sorted completed tasks"](https://github.com/diannegabriel/tinyapp/blob/master/docs/urls_shortURL.png)
+!["Sorted completed tasks"](https://github.com/diannegabriel/todo-list/blob/master/docs/completed.png)
 
-!["Sorted incomplete tasks"](https://github.com/diannegabriel/tinyapp/blob/master/docs/urls_page.png)
+!["Sorted incomplete tasks"](https://github.com/diannegabriel/todo-list/blob/master/docs/incomplete.png)
 
 ## Tech used
 
@@ -17,4 +17,5 @@ Simple todo list app with added motivational quotes to inspire you!
 - HTML
 - CSS
 - React
+- API (motivational quotes)
 - Local storage
