@@ -92,6 +92,7 @@ form button:hover {
 }
 .todo li {
   flex: 1;
+  margin: 0.5em;
 }
 .todo:hover {
   /* background-color: #ebebeb; */
