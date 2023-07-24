@@ -38,7 +38,7 @@ function App() {
         if (json[randomQuote].author === null){
           setQuote(json[randomQuote].text)
         } else {
-          setQuote(json[randomQuote].text + " — " + json[randomQuote].author)
+          setQuote(json[randomQuote].text + " — " + json[randomQuote].author.split(",")[0])
         }
       })
     }
