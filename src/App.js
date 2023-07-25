@@ -93,8 +93,8 @@ function App() {
           setTodos={setTodos}
           filteredTodos={filteredTodos}
         />
-      </section>
       <Quote quote={quote} />
+      </section>
     </main>
   );
 }
