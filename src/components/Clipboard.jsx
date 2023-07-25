@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const Clipboard = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <i class="clipboard">
+      <i class="clip"></i>
+    </i>
+  );
+};
 
 export default Clipboard;
