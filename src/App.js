@@ -70,7 +70,7 @@ function App() {
   }, [todos, status])
 
   return (
-    <div className="App">
+    <main className="App">
       <header>
         <h1>MotivaDid</h1>
       </header>
@@ -94,7 +94,7 @@ function App() {
         setTodos={setTodos} 
         filteredTodos={filteredTodos}
       />
-    </div>
+    </main>
   );
 }
 
