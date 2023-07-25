@@ -79,21 +79,23 @@ function App() {
         <h1>MotivaDid</h1>
       </header>
       <section>
-        <Error error={error} inputText={inputText} />
-        <Form
-          inputText={inputText}
-          setInputText={setInputText}
-          todos={todos}
-          setTodos={setTodos}
-          setStatus={setStatus}
-          setError={setError}
-        />
-        <TodoList
-          todos={todos}
-          setTodos={setTodos}
-          filteredTodos={filteredTodos}
-        />
-      <Quote quote={quote} />
+        <article>
+          <Error error={error} inputText={inputText} />
+          <Form
+            inputText={inputText}
+            setInputText={setInputText}
+            todos={todos}
+            setTodos={setTodos}
+            setStatus={setStatus}
+            setError={setError}
+          />
+          <TodoList
+            todos={todos}
+            setTodos={setTodos}
+            filteredTodos={filteredTodos}
+          />
+        </article>
+        <Quote quote={quote} />
       </section>
     </main>
   );
