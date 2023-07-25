@@ -5,6 +5,7 @@ import Form from "./components/Form";
 import TodoList from "./components/TodoList";
 import Quote from "./components/Quote";
 import Error from "./components/Error";
+import Clipboard from "./components/Clipboard";
 
 const motivateURL = `https://type.fit/api/quotes`;
 
@@ -81,6 +82,7 @@ function App() {
       <section>
         <article>
           <Error error={error} inputText={inputText} />
+          <Clipboard />
           <Form
             inputText={inputText}
             setInputText={setInputText}
