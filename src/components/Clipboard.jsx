@@ -2,9 +2,7 @@ import React from "react";
 
 const Clipboard = () => {
   return (
-    <i class="clipboard">
-      <i class="clip"></i>
-    </i>
+    <div className="clipboard"></div>
   );
 };
 

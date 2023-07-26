@@ -1,3 +1,6 @@
+$clipboard: #72c493;
+$paper: #fefefe;
+
 * {
   margin: 0;
   padding: 0;
@@ -28,3 +31,13 @@ section {
   display: flex;
   justify-content: space-between;
 }
+
+.clipboard {
+  margin: 5em auto;
+  border-radius: 25px;
+  border: 15px solid $clipboard;
+  padding: 20px;
+  height: 27em;
+  width: 23em;
+}
+

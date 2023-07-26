@@ -29,4 +29,11 @@ section {
   justify-content: space-between;
 }
 
-/*# sourceMappingURL=App.css.map */
+.clipboard {
+  margin: 5em auto;
+  border-radius: 25px;
+  border: 15px solid #72c493;
+  padding: 20px;
+  height: 27em;
+  width: 23em;
+}/*# sourceMappingURL=App.css.map */
