@@ -80,10 +80,11 @@ article .left {
 }
 
 form {
-  background-color: #72c493;
+  // background-color: #72c493;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex-wrap: nowrap;
 }
 
 input {
@@ -98,7 +99,7 @@ input {
   outline: none;
 }
 
-button {
+.todo-button {
   padding: 0.5rem;
   font-size: 1rem;
   border-left: none;
@@ -123,15 +124,17 @@ select {
   align-self: flex-end;
   position: relative;
   overflow: hidden;
-  background-color: $paperBg;
-
 }
 select {
   color: #455c88;
   text-align: end;
-  // background-color: $paperBg;
+  background-color: $paperBg;
   font-family: "Poppins", sans-serif;
   cursor: pointer;
   width: 6rem;
   padding: 0.5rem;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
 }

@@ -75,10 +75,10 @@ article .left {
 }
 
 form {
-  background-color: #72c493;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex-wrap: nowrap;
 }
 
 input {
@@ -93,7 +93,7 @@ input {
   outline: none;
 }
 
-button {
+.todo-button {
   padding: 0.5rem;
   font-size: 1rem;
   border-left: none;
@@ -123,8 +123,13 @@ select {
 select {
   color: #455c88;
   text-align: end;
+  background-color: rgb(222, 233, 225);
   font-family: "Poppins", sans-serif;
   cursor: pointer;
   width: 6rem;
   padding: 0.5rem;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
 }/*# sourceMappingURL=App.css.map */
