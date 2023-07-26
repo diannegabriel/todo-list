@@ -142,7 +142,6 @@ select {
 
 .todo-container {
   margin-top: 1rem;
-  background-color: #72c493;
 }
 
 .todo-list {
@@ -151,8 +150,7 @@ select {
 }
 
 .todo {
-  /* margin: 0.5rem; */
-  background: white;
+  margin: 0.5rem 0 0.5rem 0;
   font-size: 1rem;
   color: black;
   display: flex;

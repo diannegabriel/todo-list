@@ -147,7 +147,7 @@ select {
 
 .todo-container {
   margin-top: 1rem;
-  background-color: #72c493;
+  // background-color: #72c493;
 }
 
 .todo-list {
@@ -156,8 +156,8 @@ select {
 }
 
 .todo {
-  /* margin: 0.5rem; */
-  background: white;
+  margin: 0.5rem 0 0.5rem 0;
+  // background: white;
   font-size: 1rem;
   color: black;
   display: flex;
@@ -166,4 +166,8 @@ select {
   overflow-wrap: break-word;
   word-break: break-all;
   border-bottom: 0.5px dashed rgb(188, 188, 188);
+}
+
+.trash-button {
+
 }
