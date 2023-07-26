@@ -4,7 +4,9 @@ const Clipboard = () => {
   return (
     <div className="clipboard">
       <div className="clip"></div>
-      <p>THIS IS THE CLIPBOARD</p>
+      <div className="paper">
+        <p>THIS IS THE CLIPBOARD</p>
+      </div>
     </div>
   );
 };

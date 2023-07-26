@@ -47,4 +47,6 @@ section {
   top: -5%;
   left: 37.5%;
   background: rgb(118, 119, 121);
+  border-top-left-radius: 30%;
+  border-top-right-radius: 30%;
 }/*# sourceMappingURL=App.css.map */
