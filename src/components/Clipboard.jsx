@@ -52,7 +52,6 @@ const Clipboard = () => {
       <div className="board">
         <div className="clip"></div>
         <div className="paper">
-          <p>THIS IS THE CLIPBOARD</p>
           <Error error={error} inputText={inputText} />
           <Form
             inputText={inputText}

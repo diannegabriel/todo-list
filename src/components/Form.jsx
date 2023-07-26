@@ -25,7 +25,7 @@ const Form = ({ inputText, setInputText, todos, setTodos, setStatus, setError })
     setStatus(e.target.value)
   }
   return (
-    <form>
+    <Form>
       <input onChange={handleInputText} value={inputText} type="text" className="todo-input" maxLength="100"/>
       <button onClick={handleTodoSubmit} className="todo-button" type="submit">
         <i className="fas fa-plus-square"></i>
@@ -37,7 +37,7 @@ const Form = ({ inputText, setInputText, todos, setTodos, setStatus, setError })
           <option value="incomplete">Incomplete</option>
         </select>
       </div>
-    </form>
+    </Form>
   );
 };
 
