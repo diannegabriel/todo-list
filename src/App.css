@@ -103,6 +103,28 @@ button {
   background-color: rgb(222, 233, 225);
 }
 
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background-image: none;
+}
+
 .select {
   align-self: flex-end;
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(222, 233, 225);
+}
+
+select {
+  color: #455c88;
+  text-align: end;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  width: 6rem;
+  padding: 0.5rem;
 }/*# sourceMappingURL=App.css.map */

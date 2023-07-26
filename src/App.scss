@@ -108,6 +108,30 @@ button {
   background-color: $paperBg;
 }
 
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background-image: none;
+}
+
 .select {
   align-self: flex-end;
+  position: relative;
+  overflow: hidden;
+  background-color: $paperBg;
+
+}
+select {
+  color: #455c88;
+  text-align: end;
+  // background-color: $paperBg;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  width: 6rem;
+  padding: 0.5rem;
 }
