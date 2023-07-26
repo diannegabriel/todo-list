@@ -77,6 +77,7 @@ article .left {
   border-radius: 4px;
   background: $paperBg;
   color: #24243e;
+  overflow: auto;
 }
 
 form {
@@ -156,7 +157,6 @@ select {
 }
 
 .todo {
-  margin: 0.5rem 0rem 0.5rem 0;
   // background: white;
   font-size: 1rem;
   color: black;
@@ -165,11 +165,11 @@ select {
   width: 100%;
   overflow-wrap: break-word;
   word-break: break-all;
-  border-bottom: 0.5px dashed rgb(188, 188, 188);
+  border-bottom: 1px dashed rgb(188, 188, 188);
 }
 
 .todo-item {
-  margin-right: 1rem;
+  margin: 0.5rem 1rem 0.5rem 0;
 }
 
 .erase-button {
@@ -178,9 +178,11 @@ select {
   border: none;
   background-color: $paperBg;
   color: #5a5a5a;
+  opacity: 0.5;
 }
 
 .erase-button:hover {
+  opacity: 1;
   color: #24243e;
   cursor: pointer;
 }
