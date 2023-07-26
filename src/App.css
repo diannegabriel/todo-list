@@ -165,9 +165,14 @@ select {
   margin-right: 1rem;
 }
 
-.trash-button {
+.erase-button {
   padding: 0.5rem;
   font-size: 1rem;
   border: none;
   background-color: rgb(222, 233, 225);
+  color: #5a5a5a;
+}
+
+.erase-button:hover {
+  color: #24243e;
 }/*# sourceMappingURL=App.css.map */

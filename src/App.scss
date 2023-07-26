@@ -177,4 +177,10 @@ select {
   font-size: 1rem;
   border: none;
   background-color: $paperBg;
+  color: #5a5a5a;
+}
+
+.erase-button:hover {
+  color: #24243e;
+  cursor: pointer;
 }
