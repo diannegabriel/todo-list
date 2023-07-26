@@ -76,14 +76,14 @@ function App() {
 
   return (
     <main className="App">
-      <header>
+      {/* <header>
         <h1>MotivaDid</h1>
-      </header>
+      </header> */}
       <section>
-        <article>
-          <Error error={error} inputText={inputText} />
+        <article className="left">
+          {/* <Error error={error} inputText={inputText} /> */}
           <Clipboard />
-          <Form
+          {/* <Form
             inputText={inputText}
             setInputText={setInputText}
             todos={todos}
@@ -95,7 +95,7 @@ function App() {
             todos={todos}
             setTodos={setTodos}
             filteredTodos={filteredTodos}
-          />
+          /> */}
         </article>
         <Quote quote={quote} />
       </section>

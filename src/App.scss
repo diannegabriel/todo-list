@@ -32,16 +32,26 @@ section {
   width: 95vw;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+}
+
+article .left {
+  align-items: flex-start;
 }
 
 .clipboard {
-  margin: 5em auto;
+  height: 87.5vh;
+  width: 50vw;
+}
+
+.board {
+  margin: 3.5em auto;
   border-radius: 15px;
   position: relative;
   background-color: #875d30;
-  box-shadow: 8px 10px 15px -3px rgba(0,0,0,0.3);
-  height: 40em;
-  width: 40em;
+  box-shadow: 8px 10px 15px -3px rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 100%;
 }
 
 .clip {
@@ -67,4 +77,3 @@ section {
   background: rgb(222, 233, 225);
   color: #24243e;
 }
-
