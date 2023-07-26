@@ -1,6 +1,6 @@
 import React from "react";
 
-const Error = ({ error, inputText }) => {
+const Error = ({ error, inputText, setError }) => {
 
   return (
     <div className="error-container">
