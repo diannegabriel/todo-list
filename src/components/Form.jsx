@@ -33,7 +33,7 @@ const Form = ({
   };
   return (
     <form>
-      <div>
+      <div className="text-input">
         <input
           onChange={handleInputText}
           value={inputText}

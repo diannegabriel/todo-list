@@ -80,11 +80,17 @@ article .left {
 }
 
 form {
-  // background-color: #72c493;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   flex-wrap: nowrap;
+  margin-top: 1rem;
+}
+
+.text-input {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 input {
@@ -95,7 +101,7 @@ input {
   background-color: $paperBg;
   padding: 0.5rem;
   font-size: 1rem;
-  width: 94%;
+  width: 100%;
   outline: none;
 }
 
@@ -137,4 +143,27 @@ select {
   border-right: none;
   border-top: none;
   border-bottom: none;
+}
+
+.todo-container {
+  margin-top: 1rem;
+  background-color: #72c493;
+}
+
+.todo-list {
+  min-width: 30%;
+  list-style: none;
+}
+
+.todo {
+  /* margin: 0.5rem; */
+  background: white;
+  font-size: 1rem;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  overflow-wrap: break-word;
+  word-break: break-all;
+  border-bottom: 0.5px dashed rgb(188, 188, 188);
 }
