@@ -24,7 +24,7 @@ const Todo = ({ text, todo, todos, setTodos }) => {
         {/* <button className="complete-btn">
           <i className="fas fa-check"></i>
         </button> */}
-        <button className="trash-btn" onClick={handleDelete}>
+        <button className="trash-button" onClick={handleDelete}>
           <i className="fas fa-trash"></i>
         </button>
       </div>
