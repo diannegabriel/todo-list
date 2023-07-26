@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Form from "./Form";
 import TodoList from "./TodoList";
+import Error from "./Error"
 
 const Clipboard = () => {
   const [inputText, setInputText] = useState("");
@@ -51,7 +52,8 @@ const Clipboard = () => {
       <div className="board">
         <div className="clip"></div>
         <div className="paper">
-        <Form
+          <Error error={error} inputText={inputText} />
+          <Form
             inputText={inputText}
             setInputText={setInputText}
             todos={todos}

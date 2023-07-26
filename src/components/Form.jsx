@@ -40,6 +40,7 @@ const Form = ({
           type="text"
           className="todo-input"
           maxLength="100"
+          placeholder="Type your task here"
         />
         <button
           onClick={handleTodoSubmit}
