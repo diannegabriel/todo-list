@@ -76,4 +76,6 @@ article .left {
 
 form {
   background-color: #72c493;
+  display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=App.css.map */
