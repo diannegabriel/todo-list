@@ -3,7 +3,7 @@ import React from "react";
 const Clipboard = () => {
   return (
     <div className="clipboard">
-      THIS IS THE CLIPBOARD
+      <p>THIS IS THE CLIPBOARD</p>
     </div>
   );
 };
