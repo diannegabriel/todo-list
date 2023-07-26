@@ -68,7 +68,7 @@ article .left {
 }
 
 .paper {
-  padding: 2em;
+  padding: 2.5em;
   height: 87.5%;
   width: 90%;
   position: absolute;
@@ -77,7 +77,7 @@ article .left {
   border-radius: 4px;
   background: $paperBg;
   color: #24243e;
-  overflow: auto;
+  overflow-y: auto;
 }
 
 form {

@@ -72,7 +72,7 @@ article .left {
   border-radius: 4px;
   background: rgb(222, 233, 225);
   color: #24243e;
-  overflow: auto;
+  overflow-y: auto;
 }
 
 form {
