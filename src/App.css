@@ -49,4 +49,17 @@ section {
   background: rgb(118, 119, 121);
   border-top-left-radius: 30%;
   border-top-right-radius: 30%;
+  z-index: 99;
+}
+
+.paper {
+  padding: 2em;
+  height: 87.5%;
+  width: 90%;
+  position: absolute;
+  top: 6.5%;
+  left: 5%;
+  border-radius: 4px;
+  background: rgb(222, 233, 225);
+  color: #24243e;
 }/*# sourceMappingURL=App.css.map */
