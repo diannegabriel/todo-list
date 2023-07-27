@@ -1,6 +1,7 @@
 $bg: #b4b3b3;
 $clipBg: rgb(118, 119, 121);
 $paperBg: #f8fffa;
+$taskColor: #24243e;
 
 * {
   margin: 0;
@@ -156,7 +157,7 @@ select {
 
 .todo {
   font-size: 1rem;
-  color: black;
+  color: $taskColor;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -170,11 +171,11 @@ select {
   cursor: pointer;
 }
 
-.completed {
-  transition: all 0.3s ease-in-out;
-  text-decoration: line-through;
-  opacity: 0.5;
-}
+// .completed {
+//   transition: all 0.3s ease-in-out;
+//   text-decoration: line-through;
+//   opacity: 0.5;
+// }
 
 .erase-button {
   padding: 0.5rem;
@@ -201,17 +202,16 @@ select {
 
 .stroke {
   display: none;
-  color: #000;
 }
 
 .stroke-active {
   display: block;
   width: inherit;
   height: inherit;
-  stroke: #000;
+  stroke: rgb(68, 68, 68);
   position: absolute;
   left: -10px;
   bottom: 5px;
-  stroke-width: 1.5;
+  stroke-width: 3;
   opacity: 1;
 }
