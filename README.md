@@ -2,22 +2,23 @@
 
 Simple todo list app with added motivational quotes to inspire you!
 
-## Final Product
-
 Live website: [MotivaDid](https://diannegabriel.github.io/todo-list/)
+
+## Initial Product
 
 !["Home"](https://github.com/diannegabriel/todo-list/blob/master/docs/all.png)
 
-!["Sorted completed tasks"](https://github.com/diannegabriel/todo-list/blob/master/docs/completed.png)
+## Ver. 2 Product
 
-!["Sorted incomplete tasks"](https://github.com/diannegabriel/todo-list/blob/master/docs/incomplete1.png)
 
-## Tech used
 
-- Node.js
+## Tech Stack
+
 - JavaScript
+- React.js
 - HTML
 - CSS
-- React
+- SASS
+- SVG
 - API (motivational quotes)
 - Local storage
