@@ -225,4 +225,8 @@ a .completed {
   border-bottom-right-radius: 60px 5px;
   display: inline-block;
   background: #ffff88;
+}
+
+footer {
+  font-family: "Caveat", cursive;
 }/*# sourceMappingURL=App.css.map */

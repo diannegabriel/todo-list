@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import "./App.css";
 import Quote from "./components/Quote";
 import Clipboard from "./components/Clipboard";
+import Footer from "./components/Footer";
 
 const motivateURL = `https://type.fit/api/quotes`;
 
@@ -49,6 +50,7 @@ function App() {
         </article>
         <article className="right">
           <Quote quote={quote} />
+          <Footer />
         </article>
       </section>
     </main>
