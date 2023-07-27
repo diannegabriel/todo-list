@@ -1,100 +1,59 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect } from "react";
 
-import './App.css';
-import Form from './components/Form'
-import TodoList from './components/TodoList';
-import Quote from './components/Quote'
-import Error from "./components/Error";
+import "./App.css";
+import Quote from "./components/Quote";
+import Clipboard from "./components/Clipboard";
+import Footer from "./components/Footer";
 
 const motivateURL = `https://type.fit/api/quotes`;
 
 function App() {
-  const [inputText, setInputText] = useState('');
-  const [todos, setTodos] = useState([]);
-  const [status, setStatus] = useState('all');
-  const [filteredTodos, setFilteredTodos] = useState([]);
-  const [quote, setQuote] = useState('')
-  const [error, setError] = useState(false)
-
-  // Functions as the "grabber" of the todos from local storage
-  useEffect(() => {
-    const getLocalTodos = () => {
-      if (localStorage.getItem('todos') === null) {
-        localStorage.setItem('todos', JSON.stringify([]));
-      } else {
-        let localTodo = JSON.parse(localStorage.getItem("todos"));
-        setTodos(localTodo)
-      }
-    }
-    getLocalTodos();
-  }, [])
+  const [quote, setQuote] = useState("");
 
   // Functions as the quote generator
   useEffect(() => {
     const fetchQuote = async () => {
-      const result = await fetch(motivateURL)
-      result.json().then(json => {
-        const randomQuote = Math.floor(Math.random() * json.length)
-        if (json[randomQuote].author === null){
-          setQuote(json[randomQuote].text)
+      const result = await fetch(motivateURL);
+      result.json().then((json) => {
+        const randomQuote = Math.floor(Math.random() * json.length);
+        if (json[randomQuote].author === null) {
+          setQuote(json[randomQuote].text);
         } else {
-          setQuote(json[randomQuote].text + " — " + json[randomQuote].author.split(",")[0])
+          setQuote(
+            json[randomQuote].text +
+              " — " +
+              json[randomQuote].author.split(",")[0]
+          );
         }
-      })
-    }
+      });
+    };
     fetchQuote();
   }, []);
 
-  useEffect(() => {
-    const handleFilter = () => {
-      switch(status){
-        case 'completed':
-          setFilteredTodos(todos.filter(todo => todo.completed === true));
-          break;
-        case 'incomplete':
-          setFilteredTodos(todos.filter(todo => todo.completed === false));
-          break;
-        default:
-          setFilteredTodos(todos);
-          break;
-      }
-    }
-    handleFilter();
-  }, [todos, status])
-
-  useEffect(() => {
-    const saveLocalTodos = () => {
-      localStorage.setItem("todos", JSON.stringify(todos));
-    }
-    saveLocalTodos();
-  }, [todos, status])
-
   return (
-    <div className="App">
-      <header>
-        <h1>MotivaDid</h1>
-      </header>
-      <Quote
-        quote={quote}
-      />
-      <Error 
-        error={error}
-        inputText={inputText} 
-      />
-      <Form 
-        inputText={inputText} 
-        setInputText={setInputText}
-        todos={todos}
-        setTodos={setTodos}
-        setStatus={setStatus}
-        setError={setError}
-      />
-      <TodoList 
-        todos={todos} 
-        setTodos={setTodos} 
-        filteredTodos={filteredTodos}
-      />
-    </div>
+    <main className="App">
+      <svg id="stroke" xmlns="http://www.w3.org/2000/svg" width="0" height="0">
+        <defs>
+          <path
+            id="line"
+            d="M2 2c49.7 2.6 100 3.1 150 1.7-46.5 2-93 4.4-139.2 7.3 45.2-1.5 90.6-1.8 135.8-.6"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            vector-effect="non-scaling-stroke"
+          />
+        </defs>
+      </svg>
+      <section>
+        <article className="left">
+          <Clipboard />
+        </article>
+        <article className="right">
+          <Quote quote={quote} />
+          <Footer />
+        </article>
+      </section>
+    </main>
   );
 }
 
