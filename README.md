@@ -17,6 +17,7 @@ Live website: [MotivaDid](https://diannegabriel.github.io/todo-list/)
 - Responsive Layout
 - Mobile-friendly
 - Implement a modal that compliments you when finishing a task
+- Refresh button to regenerate motivational quotes
 
 ## Tech Stack
 
