@@ -74,6 +74,10 @@ article .left {
   overflow-y: auto;
 }
 
+.error-container {
+  color: #d31515;
+}
+
 form {
   display: flex;
   flex-direction: column;
