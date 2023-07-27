@@ -43,9 +43,6 @@ function App() {
           />
         </defs>
       </svg>
-      {/* <header>
-        <h1>MotivaDid</h1>
-      </header> */}
       <section>
         <article className="left">
           <Clipboard />
