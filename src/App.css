@@ -199,11 +199,11 @@ a .completed {
 
 .stroke-active {
   display: block;
-  width: calc(100% - 40px);
-  height: 100%;
+  width: calc(100% - 5px);
+  height: calc(100% + 10px);
   stroke: rgb(68, 68, 68);
   position: absolute;
   left: -10px;
-  bottom: 0;
+  bottom: -5px;
   stroke-width: 2;
 }/*# sourceMappingURL=App.css.map */
