@@ -146,10 +146,6 @@ select {
   border-bottom: none;
 }
 
-.todo-container {
-  margin-top: 1rem;
-}
-
 .todo-list {
   min-width: 30%;
   list-style: none;
@@ -171,11 +167,9 @@ select {
   cursor: pointer;
 }
 
-// .completed {
-//   transition: all 0.3s ease-in-out;
-//   text-decoration: line-through;
-//   opacity: 0.5;
-// }
+a .completed {
+  opacity: 0.5;
+}
 
 .erase-button {
   padding: 0.5rem;

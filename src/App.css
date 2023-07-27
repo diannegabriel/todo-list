@@ -141,10 +141,6 @@ select {
   border-bottom: none;
 }
 
-.todo-container {
-  margin-top: 1rem;
-}
-
 .todo-list {
   min-width: 30%;
   list-style: none;
@@ -164,6 +160,10 @@ select {
 
 .todo-item:hover {
   cursor: pointer;
+}
+
+a .completed {
+  opacity: 0.5;
 }
 
 .erase-button {
