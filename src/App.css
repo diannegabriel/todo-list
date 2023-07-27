@@ -158,6 +158,10 @@ select {
   border-bottom: 1px dashed rgb(188, 188, 188);
 }
 
+.todo-item {
+  margin: 10px 0 10px 0;
+}
+
 .todo-item:hover {
   cursor: pointer;
 }
