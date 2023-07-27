@@ -155,14 +155,11 @@ select {
   color: black;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   overflow-wrap: break-word;
   word-break: break-all;
   border-bottom: 1px dashed rgb(188, 188, 188);
-}
-
-.todo-item {
-  margin: 0.5rem 1rem 0.5rem 0;
 }
 
 .todo-item:hover {
@@ -189,4 +186,28 @@ select {
   color: #24243e;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 154px;
+  text-decoration: none;
+  position: relative;
+}
+
+.stroke {
+  display: none;
+  color: #000;
+}
+
+.stroke-active {
+  display: block;
+  width: inherit;
+  height: inherit;
+  stroke: #000;
+  position: absolute;
+  left: -10px;
+  bottom: 5px;
+  stroke-width: 1.5;
+  opacity: 1;
 }/*# sourceMappingURL=App.css.map */
