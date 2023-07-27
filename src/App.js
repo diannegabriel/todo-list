@@ -50,7 +50,9 @@ function App() {
         <article className="left">
           <Clipboard />
         </article>
-        <Quote quote={quote} />
+        <article className="right">
+          <Quote quote={quote} />
+        </article>
       </section>
     </main>
   );
