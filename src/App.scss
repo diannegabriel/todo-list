@@ -160,8 +160,7 @@ select {
   width: 100%;
   overflow-wrap: break-word;
   word-break: break-all;
-  border-bottom: 1px dashed rgb(188, 188, 188);
-  // margin: 10px 0 10px 0;
+  border-bottom: 1px dashed rgba(188, 188, 188, 0.3);
 }
 
 .todo-item {
@@ -211,6 +210,6 @@ a .completed {
   position: absolute;
   left: -10px;
   bottom: 5px;
-  stroke-width: 3;
+  stroke-width: 2;
   opacity: 1;
 }
