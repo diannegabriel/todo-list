@@ -213,3 +213,19 @@ a .completed {
   bottom: -5px;
   stroke-width: 2;
 }
+
+.quote-container {
+  line-height: 1;
+  text-align: center;
+  width: 275px;
+  margin: 25px;
+  min-height: 250px;
+  max-height: 250px;
+  padding: 35px 30px 35px 30px;
+  position: relative;
+  border: 1px solid #e8e8e8;
+  border-top: 60px solid #fdfd86;
+  border-bottom-right-radius: 60px 5px;
+  display: inline-block;
+  background: #ffff88;
+}
