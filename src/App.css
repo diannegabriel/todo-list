@@ -25,6 +25,7 @@ main {
 }
 
 section {
+  width: 75vw;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -209,6 +210,13 @@ a .completed {
   left: -10px;
   bottom: -5px;
   stroke-width: 2;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 95vh;
 }
 
 .quote-container {
