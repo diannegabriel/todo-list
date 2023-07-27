@@ -32,9 +32,7 @@ const Todo = ({ text, todo, todos, setTodos }) => {
         </defs>
       </svg>
       <div className="todo">
-        <li
-          onClick={handleComplete}
-        >
+        <li onClick={handleComplete}>
           <a className={`todo-item ${todo.completed ? "completed btn" : ""}`}>
             {text}
             <svg
