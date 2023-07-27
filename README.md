@@ -6,9 +6,17 @@ Live website: [MotivaDid](https://diannegabriel.github.io/todo-list/)
 
 ## Latest Version
 
+!["Ver. 2"](https://github.com/diannegabriel/todo-list/blob/master/docs/motivadid_ver2.png)
+
 ## Initial Version
 
-!["Home"](https://github.com/diannegabriel/todo-list/blob/master/docs/all.png)
+!["Old Version"](https://github.com/diannegabriel/todo-list/blob/master/docs/all.png)
+
+## Future Developments
+
+- Responsive Layout
+- Mobile-friendly
+- Implement a modal that compliments you when finishing a task
 
 ## Tech Stack
 
