@@ -3,7 +3,8 @@ import React from 'react'
 const Footer = () => {
   return (
     <footer>
-      <p>MotivaDid</p>
+      <h1>MotivaDid</h1>
+      <p>A todo list app with a slight encouragement!</p>
     </footer>
   )
 }
