@@ -11,11 +11,8 @@ const Footer = () => {
           Local storage
         </p>
         <p>
-          Made by:
-          <a href="https://www.dianne.codes" target="_blank">
-            {" "}
+          Made by: 
             Dianne
-          </a>
         </p>
         <p>Ver. 2</p>
       </div>
