@@ -1,7 +1,7 @@
 $bg: #b4b3b3;
 $clipboard: #72c493;
 $clipBg: rgb(118, 119, 121);
-$paperBg: rgb(222, 233, 225);
+$paperBg: #f8fffa;
 
 * {
   margin: 0;
@@ -178,7 +178,7 @@ select {
   border: none;
   background-color: $paperBg;
   color: #5a5a5a;
-  opacity: 0.5;
+  opacity: 0.2;
 }
 
 .erase-button:hover {

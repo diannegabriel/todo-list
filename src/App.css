@@ -63,14 +63,14 @@ article .left {
 }
 
 .paper {
-  padding: 2em;
+  padding: 2.5em;
   height: 87.5%;
   width: 90%;
   position: absolute;
   top: 6.5%;
   left: 5%;
   border-radius: 4px;
-  background: rgb(222, 233, 225);
+  background: #f8fffa;
   color: #24243e;
   overflow-y: auto;
 }
@@ -94,7 +94,7 @@ input {
   border-right: none;
   border-top: none;
   border-bottom: 1px solid #5a5a5a;
-  background-color: rgb(222, 233, 225);
+  background-color: #f8fffa;
   padding: 0.5rem;
   font-size: 1rem;
   width: 100%;
@@ -108,7 +108,7 @@ input {
   border-right: none;
   border-top: none;
   border-bottom: 1px solid #5a5a5a;
-  background-color: rgb(222, 233, 225);
+  background-color: #f8fffa;
 }
 
 select {
@@ -130,7 +130,7 @@ select {
 select {
   color: #455c88;
   text-align: end;
-  background-color: rgb(222, 233, 225);
+  background-color: #f8fffa;
   font-family: "Poppins", sans-serif;
   cursor: pointer;
   width: 6rem;
@@ -169,9 +169,9 @@ select {
   padding: 0.5rem;
   font-size: 1rem;
   border: none;
-  background-color: rgb(222, 233, 225);
+  background-color: #f8fffa;
   color: #5a5a5a;
-  opacity: 0.5;
+  opacity: 0.2;
 }
 
 .erase-button:hover {
