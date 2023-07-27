@@ -31,7 +31,7 @@ main {
 }
 
 section {
-  width: 75vw;
+  width: 77.5vw;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -221,7 +221,8 @@ a .completed {
 .right {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: flex-end;
   height: 95vh;
 }
 
@@ -246,6 +247,13 @@ footer {
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
-  font-family: 'Caveat', cursive;
   color:#e8e8e8;
+  text-align: right;
+  width: 90%;
+  font-size: small;
+}
+
+.project-name {
+  font-family: 'Caveat', cursive;
+  font-size: 3rem;
 }
