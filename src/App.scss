@@ -172,6 +172,16 @@ select {
   margin: 0.5rem 1rem 0.5rem 0;
 }
 
+.todo-item:hover {
+  cursor: pointer;
+}
+
+.completed {
+  transition: all 0.3s ease-in-out;
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
 .erase-button {
   padding: 0.5rem;
   font-size: 1rem;
@@ -185,4 +195,5 @@ select {
   opacity: 1;
   color: #24243e;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
