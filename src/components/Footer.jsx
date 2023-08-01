@@ -7,12 +7,14 @@ const Footer = () => {
       <h2>A todo list app with a slight encouragement!</h2>
       <div className="credits">
         <p>
-          Built with: JavaScript, React.js, HTML, CSS, SASS, SVG, Motivation API,
-          Local storage
+          Built with: JavaScript, React.js, HTML, CSS, SASS, SVG, Motivation
+          API, Local storage
         </p>
         <p>
-          Made by: 
+          Made by:
+          <a href="https://github.com/diannegabriel/todo-list" target="_blank">{" "}
             Dianne
+          </a>
         </p>
         <p>Ver. 2</p>
       </div>
